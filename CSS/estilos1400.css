@@ -1,0 +1,451 @@
+*{
+  box-sizing: border-box;
+}
+:root{
+  --green-color: rgb(32, 220, 100);
+  --main-font : "Helvetica", "Arial", sans-serif;
+  --second-font:"Gothic", "Arial", sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
+/*Left column*/
+#spotify{
+  height:100vh;
+  display:grid;
+  grid-template-columns: 275px 5fr;
+  grid-template-areas:"left-column   right-column";
+}
+
+
+#left-column{
+  grid-area: left-column;
+  background-color: black;
+}
+
+#right-column{
+  grid-area: right-column;
+  overflow-y: overlay; 
+  overflow-x: none;
+}
+
+::-webkit-scrollbar{
+  background: transparent;
+  width:12px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: rgba(128, 128, 128, 0.507);
+}
+
+#top-row{
+  height:335px;
+}
+
+.icons{
+  padding-left:20px;
+  margin-top: 10px;
+  display:flex;
+  align-items: center;
+}
+
+a{
+  padding-left:10px;
+  color:white;
+  opacity: 0.8;
+  text-decoration: none;
+  font-family:var(--main-font);
+  font-size: 13.5px;
+  font-weight: bold;
+}
+
+.dots{
+  font-size:30px;
+  padding-left:21px;
+}
+
+.iconify{
+  font-size: 28px;
+  color:white;
+  opacity: 0.8;
+  cursor: pointer;
+} 
+
+#plus{
+  margin-top:35px;
+}
+
+#line{
+  margin-top: 10px;
+  border-top: 1px solid white;
+  margin-left: 24px;
+  margin-right: 24px;
+  opacity: 0.2;
+}
+
+.icons-2{
+  display:flex;
+  margin-top: 8px;
+  align-items: center;
+  padding-left: 20px;
+}
+
+/*Right column*/
+
+/*Left-bottom-row*/
+
+#top-bottom-row{
+  background:rgba(12,22,34,255);
+  margin: 0;
+  height:12vh;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#left-bottom-row{
+  display:flex;
+  margin-left: 8px;
+}
+
+#right-bottom-row{
+  display:flex;
+  margin-right: 8px;
+}
+
+#cont-play{
+  border-radius: 100%;
+  width: 56px;
+  height: 56px;
+  z-index:1;
+  margin-left:10px;
+}
+
+#play-green{
+  font-size: 65px;
+  position: relative;
+  right:4.5px;
+  bottom:4.8px;
+  opacity: 1;
+  color:var(--green-color);
+
+}
+
+#icon-1{
+  margin-left: 5px;
+  padding:0;
+  margin-top: 9px;
+  margin-left:20px;
+  font-size: 40px;
+}
+
+#icon-dots{
+  margin-left: 5px;
+  padding:0;
+  margin-top: 14px;
+  margin-left:20px;
+  font-size: 30px;
+}
+
+
+#icon-first{
+  margin-left: 5px;
+  padding:0;
+  margin-top: 9px;
+  font-size: 40px;
+  margin-left:30px;
+}
+
+/*Right-bottom-row*/
+
+#right-bottom-row{
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+#icon-second{
+  font-size:20px;
+  margin-right:20px;
+}
+
+#icon-third{
+  font-size: 13.5px;
+  font-family:var(--main-font);
+  font-size: 14px;
+  font-weight: 450;
+  opacity: 0.8;
+}
+
+#icon-fourth{
+  font-size:15px; 
+  margin-bottom: 3px;
+  margin-left:10px;
+}
+
+#icon-first,#icon-1,#icon-second,
+#icon-third,#icon-fourth{
+  color:white;
+}
+
+
+#cabecera{
+  display:grid;
+  position:sticky;
+  grid-template-columns: 30px 5.77fr 4.6fr 3.97fr 1.37fr;
+  grid-template-areas: "michi title reproducción álbum time time";
+  align-items: center;
+  margin-left: 0px;
+  object-fit:contain;
+  background-color:rgba(12,21,32,255) ;
+  border-bottom: 1px solid rgba(255, 255, 255,0.2);
+  top:0px;
+  width: 99.85%;
+  z-index: 2;
+}
+
+#title{
+  grid-area: "title";
+  font-family:var(--second-font);
+  font-weight: 100;
+  font-size: 12px;
+  color:white;
+  opacity:0.7;
+  margin-left: 40px;
+}
+
+#michi{
+  font-family: var(--second-font);
+  grid-area: "michi";
+  color:white;
+  opacity:0.7;
+  font-size: 14.5px;
+  margin-left: 40px;
+}
+#reproducción{
+  grid-area:"reproducción";
+  font-family: var(--second-font);
+  font-weight: 100;
+  font-size: 12px;
+  color:white;
+  opacity:0.7;
+  margin-left: 25px;
+}
+#álbum{
+  grid-area: "álbum";
+  font-family: var(--second-font);
+  font-weight: 100;
+  font-size: 12px;
+  color:white;
+  opacity:0.7;
+  margin-left: 12px;
+  visibility: visible;
+}
+#time{
+  grid-area: "time";
+  font-size: 20px;
+  color:white;
+  opacity:0.7;
+  margin-left:0px;
+}
+
+
+/*Top row */
+
+#antesdespues{
+  grid-area: "antesdespues";
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  top:0;
+  z-index:1;
+}
+
+#top50{
+  grid-area: "top50";
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 4;
+}
+#imagentop50{
+  display: inline;
+  width: 225px;
+  height: 240px;
+  position: relative;
+  left:30px;
+  top:60px;
+}
+#playlist{
+  position:static;
+  margin-top:90px;
+  width:70px;
+  margin-left:0px;
+  grid-area: "playlist";
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  height:50px;
+  font-size: 13px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
+}
+#top50global{
+  position:relative;
+  grid-area: "top50global";
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  height: 100px;
+}
+
+#text-2{
+  position:fixed;
+  position:absolute;
+  position:absolute;
+  font-size:100px;
+  font-family:"Franklin Gothic Heavy",sans-serif;
+  margin-top: -30px;
+  margin-left: 0px;
+}
+
+#comentario{
+  grid-area: "comentario";
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+  font-family:"Yu Gothic Medium",sans-serif;
+  font-weight: 1000;
+  font-size: 13.5px;
+  height: 30px;
+  margin-top:-35px;
+  margin-left:0px;
+}
+
+#comentario-2{
+  display:flex;
+  align-items: center;
+  grid-area: "comentario-2";
+  grid-column: 2 / span 1;
+  grid-row: 5 / span 1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 450px;
+  font-weight: bolder;
+  font-size:13px;
+  justify-content: space-between;
+  margin-top: -25px;
+  height:60px;
+  margin-left:0px;
+}
+#logo{
+  font-size: 25px;
+}
+
+
+#antesdespues{
+  padding-left: 25px;
+  padding-top: 15px;
+}
+
+#arrow{
+  font-size: 35px;
+}
+
+
+/*Canciones*/
+
+
+.cancion-2{
+  display:grid;
+  grid-template-columns: 30px 5.77fr 4.6fr 3.97fr 1.37fr;
+  align-items: center;
+  margin-left: 38px;
+  margin-top:-10px;
+}
+
+.numeración{
+  font-family:"Franklin Gothic",sans-serif;
+  opacity:0.8;
+  color:white;
+}
+.img-song{
+  width: 40px;
+  height: 40px;
+  color:white;
+}
+.song{
+  display:flex;
+  align-items: center;
+}
+.name-song{
+  font-family:"Franklin Gothic",sans-serif;
+  font-size: 14px;
+  margin-left:15px;
+  color:white;
+  opacity:0.6;
+}
+.number{
+  font-family:"Franklin Gothic",sans-serif;
+  margin-left:50px;
+  color:white;
+  opacity:0.6;
+}
+.album{
+  font-family:"Franklin Gothic",sans-serif;
+  color:white;
+  opacity:0.6;
+  visibility: visible;
+}
+.last{
+  font-family:"Franklin Gothic",sans-serif;
+  margin-left:-10px;
+  color:white;
+  opacity:0.6;
+  margin-left:-20px;
+}
+.heart-dots{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: -80px;
+}
+
+#icon-heart-5,#icon-dot-5{
+  font-size: 20px;
+  visibility: hidden;
+}
+
+/*Footer*/
+
+#random,#back,#front,#repeat{
+  font-size: 20px;
+}
+#play{
+  font-size: 40px;
+}
+
+#moremusic{
+  display:flex;
+  width: 250px;
+  align-items: center;
+  justify-content: space-around;
+}
+#volume,#microfono,#lista,#computadora{
+  font-size: 20px;
+}
+
+
+::-webkit-slider-thumb{
+  opacity:0;
+}
+::-webkit-slider-thumb:hover{
+  opacity:1;
+}
+
+#actualsong{
+  align-items: center;
+  margin-left: 10px;
+  display:flex;
+}
+
+#img-repro{
+  width: 55px;
+  height: 55px;
+}
