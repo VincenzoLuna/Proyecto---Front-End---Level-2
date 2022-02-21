@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link media="screen and (min-width:1000px)" rel = "stylesheet" href = "estilos1000.css">
+  <link media="screen and (min-width:1400px)" rel="stylesheet" href="estilos1400.css">
+  <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+  <script src="https://kit.fontawesome.com/db6106ed46.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet">
+  <title>Spotify</title>
+</head>
+<body>
+
+  <div id = "spotify">
+
+    <div id = "left-column" class = "cont-1">
+
+      <div class = "dots">
+        <span id = "dot-horizontal" class="iconify" data-icon="radix-icons:dots-horizontal"></span>
+      </div>
+
+      <div  class = "icons">
+        <span id = "home" class="iconify" data-icon="fluent:home-32-regular"></span>
+        <a href ="">Inicio</a>
+      </div>
+
+      <div class = "icons">
+        <span id = "glass" class="iconify" data-icon="ph:magnifying-glass-light"></span>
+        <a href ="">Buscar</a>
+      </div>
+
+      <div class = "icons">
+        <span id = "library" class="iconify" data-icon="bx:library" ></span>
+        <a href ="">Tu biblioteca</a>
+      </div>
+      
+      <div id = "plus" class = "icons-2">
+        <span id = "box" class="iconify" data-icon="ri:add-box-fill"></span>
+        <a href ="">Crear lista</a>
+      </div>
+
+      <div class = "icons-2">
+        <img id = "heart-linear" src="images\heart.png" alt="heart">
+        <a href ="">Canciones que te gustan</a>
+      </div>
+      <div id = "line"></div>
+
+    </div>
+      
+    <div id = "right-column" class = "cont-1">
+      <div id="antesdespues">
+        <span id = "arrow" class="iconify" data-icon="fluent:chevron-circle-right-48-filled" data-rotate="180deg" style = "color:black"></span>
+        <span id = "arrow" class="iconify" data-icon="fluent:chevron-circle-right-48-filled" style = "color:black"span>
+      </div>
+      <div id = "top-row">
+        <div id="top50"><img id = "imagentop50" src="images\top 50 global.jpg" alt="image50"></div>
+        <div id = "playlist"><p style = "color:white" id ="text-1">PLAYLIST</p></div>
+        <div id = "top50global"><p style = "color:white" id= "text-2">Top50:Global</p></div>
+        <div id="comentario"><p style = "color:rgba(255, 255, 255, 0.6)" id="text-3">Tu actualización diaria de las canciones más escuchadas ahora mismo en Global</p></div>
+        <div id = "comentario-2">
+          <span id = "logo" class="iconify" data-icon="logos:spotify-icon"></span>
+          <div id = "comentario-3"><p id = "text-4" style = "color:white" >Spotify·16.563822 "me gusta"·50 canciones, 2 hr 48 min</p></div>
+        </div>
+        
+
+      </div>
+      
+      <div id = "bottom-row">
+
+        <div id = "top-bottom-row">
+          <div id = "left-bottom-row">
+            <div id = "cont-play" onclick="playpauseTrack()">
+              <i id = "play-green" class="fa-solid fa-circle-play"></i>
+            </div>
+            <span id = "icon-first" class="iconify" data-icon="bx:heart" ></span>
+            <span id = "icon-1" class="iconify" data-icon="fluent:arrow-circle-down-12-regular" ></span>
+            <span id = "icon-dots" class="iconify" data-icon="radix-icons:dots-horizontal" ></span>
+          </div>
+
+          <div id = "right-bottom-row">
+            <span id = "icon-second" class="iconify" data-icon="ph:magnifying-glass-light" ></span>
+            <p id ="icon-third">Orden personalizado</p>
+            <i id ="icon-fourth" class="fa-solid fa-caret-down" ></i>
+          </div>
+        </div>
+        
+        <div id = "bottom-bottom-row">
+          <div id="cabecera">
+            <p id = "michi">#</p>
+            <p id ="title">TÍTULO</p>
+            <p id ="reproducción">REPRODUCCIONES</p>
+            <p id = "álbum">ÁLBUM</p>
+            <span id="time" class="iconify" data-icon="bx:time"></span>
+          </div>
+        </div>
+
+        <div id = "contcanciones" >
+          <div class = "cancion-2" id = "Heat-waves" onclick = "main()"> 
+            <p class = "numeración">1</p>
+            <div class = "song">
+              <img class = "img-song" src="images\Heat-waves.jfif" alt="heat">
+              <p class = "name-song">Heat Waves <br> Glass Animals <br></p>
+            </div>
+            <p class = "number">4.685.885</p>
+            <p class = "album">Dreamland(+Bonus Levels)</p>
+            <div class = "heart-dots">
+              <span id = "icon-heart-5" class="iconify" data-icon="bx:heart" ></span>
+              <p class = "last">3:59</p>
+              <span id = "icon-dot-5" class="iconify" data-icon="radix-icons:dots-horizontal" ></span>
+            </div>
+          </div>
+
+          <div class = "cancion-2" id = "Stay" >
+            <p class = "numeración">2</p>
+            <div class = "song">
+              <img class = "img-song" src="images\Stay.jpg" alt="stay">
+              <p class= "name-song">STAY(with Justin Bieber) <br> The Kid LAROI,Justin Bieber <br></p>
+            </div>
+            <p class = "number">4.024.696</p>
+            <p class= "album">F*CK LOVE 3: OVER YOU</p>
+            <div class = "heart-dots">
+              <span id = "icon-heart-5" class="iconify" data-icon="bx:heart" ></span>
+              <p class = "last">2:22</p>
+              <span id = "icon-dot-5" class="iconify" data-icon="radix-icons:dots-horizontal" ></span>
+            </div>
+          </div>
+
+          <div class = "cancion-2" id = "abcdefu" >
+            <p class = "numeración">3</p>
+            <div class = "song">
+              <img class = "img-song" src="images\abcdefu.png" alt="abcdefu">
+              <p class= "name-song">abcdefu <br> GAYLE <br></p>
+            </div>
+            <p class = "number">3.923.652</p>
+            <p class= "album">abcdefu</p>
+            <div class = "heart-dots">
+              <span id = "icon-heart-5" class="iconify" data-icon="bx:heart" ></span>
+              <p class = "last">2:49</p>
+              <span id = "icon-dot-5" class="iconify" data-icon="radix-icons:dots-horizontal" ></span>
+            </div>
+          </div>
+
+          <div class = "cancion-2" id= "Enemy">
+            <p class = "numeración">4</p>
+            <div class = "song">
+              <img class = "img-song" src="images\enemy.jfif" alt="enemy">
+              <p class= "name-song">Enemy (with JID) - from the series Arcane League ...<br> Imagine Dragons, JID, Arcane, League of Legends<br></p>
+            </div>
+            <p class = "number">3.852.617</p>
+            <p class= "album">Mercury - Act 1</p>
+            <div class = "heart-dots">
+              <span id = "icon-heart-5" class="iconify" data-icon="bx:heart" ></span>
+              <p class = "last">2:53</p>
+              <span id = "icon-dot-5" class="iconify" data-icon="radix-icons:dots-horizontal" ></span>
+            </div>
+          </div>
+          <div class = "cancion-2" id = "Mamiii">
+            <p class = "numeración">5</p>
+            <div class = "song">
+              <img class = "img-song" src="images\mamiii.png" alt="mamiii">
+              <p class= "name-song">MAMIII<br>Becky G, KAROL G<br></p>
+            </div>
+            <p class = "number">3.724.525</p>
+            <p class= "album">MAMIII</p>
+            <div class = "heart-dots">
+              <span id = "icon-heart-5" class="iconify" data-icon="bx:heart" ></span>
+              <p class = "last">3:46</p>
+              <span id = "icon-dot-5" class="iconify" data-icon="radix-icons:dots-horizontal" ></span>
+            </div>
+          </div>
+
+          <div class = "cancion-2" id = "Cold-heart">
+            <p class = "numeración">6</p>
+            <div class = "song">
+              <img class = "img-song" src="images\cold-heart.jpg" alt="cold heart">
+              <p class= "name-song">Cold Heart - PNAU Remix<br> Elton John, Dua Lipa, PNAU<br></p>
+            </div>
+            <p class = "number">3.683.277</p>
+            <p class= "album">The Lockdown Sessions</p>
+            <div class = "heart-dots">
+              <span id = "icon-heart-5" class="iconify" data-icon="bx:heart" ></span>
+              <p class = "last">3:23</p>
+              <span id = "icon-dot-5" class="iconify" data-icon="radix-icons:dots-horizontal" ></span>
+            </div>
+          </div>
+
+          <div class = "cancion-2" id = "Industry">  
+            <p class = "numeración">7</p>
+            <div class = "song">
+              <img class = "img-song" src="images\industry-baby.jpg" alt="industry">
+              <p class= "name-song">INDUSTRY BABY (feat.Jack Harlow)<br> Lil Nas X, Jack Harlow<br></p>
+            </div>
+            <p class = "number">3.267.898</p>
+            <p class= "album">MONTERO</p>
+            <div class = "heart-dots">
+              <span id = "icon-heart-5" class="iconify" data-icon="bx:heart" ></span>
+              <p class = "last">3:32</p>
+              <span id = "icon-dot-5" class="iconify" data-icon="radix-icons:dots-horizontal" ></span>
+            </div>
+          </div>
+
+          <div class = "cancion-2" id = "Desesperados">
+            <p class = "numeración">8</p>
+            <div class = "song">
+              <img class = "img-song" src="images\desesperados.jpeg" alt="desesperados">
+              <p class= "name-song">Desesperados<br>Rauw Alejandro, Chencho Corleone<br></p>
+            </div>
+            <p class = "number">3.113.737</p>
+            <p class= "album">VICE VERSA</p>
+            <div class = "heart-dots">
+              <span id = "icon-heart-5" class="iconify" data-icon="bx:heart" ></span>
+              <p class = "last">3:45</p>
+              <span id = "icon-dot-5" class="iconify" data-icon="radix-icons:dots-horizontal" ></span>
+            </div> 
+          </div>
+
+          <div class = "cancion-2" id="Easyonme">
+            <p class = "numeración">9</p>
+            <div class = "song">
+              <img class = "img-song" src="images\easy-on-me.jpg" alt="easy">
+              <p class= "name-song">Easy on me<br>Adele<br></p>
+            </div>
+            <p class = "number">2.984.492</p>
+            <p class= "album">30</p>
+            <div class = "heart-dots">
+              <span id = "icon-heart-5" class="iconify" data-icon="bx:heart" ></span>
+              <p class = "last">3:45</p>
+              <span id = "icon-dot-5" class="iconify" data-icon="radix-icons:dots-horizontal" ></span>
+            </div>
+          </div>
+
+          <div class = "cancion-2" id="Wedonttalkaboutbruno">
+            <p class = "numeración">10</p>
+            <div class = "song">
+              <img class = "img-song" src="images\We-dont-talk-about-bruno.jfif" alt="wedont">
+              <p class= "name-song">We Don't Talk About Bruno<br>Carolina Gaitán - La Gaita, Mauro Castillo, Adassa, Rhenz...<br></p>
+            </div>
+            <p class = "number">2.800.892</p>
+            <p class= "album">Encanto (Original Motion Picture...)</p>
+            <div class = "heart-dots">
+              <span id = "icon-heart-5" class="iconify" data-icon="bx:heart"></span>
+              <p class = "last">3:36</p>
+              <span id = "icon-dot-5" class="iconify" data-icon="radix-icons:dots-horizontal" ></span>
+            </div>
+          </div>
+
+          <div class = "cancion-2" id="Shivers">
+            <p class = "numeración">11</p>
+            <div class = "song">
+              <img class = "img-song" src="images\Shivers.jpg" alt="shivers">
+              <p class= "name-song">Shivers<br>Ed Sheeran<br></p>
+            </div>
+            <p class = "number">2.793.989</p>
+            <p class= "album">=</p>
+            <div class = "heart-dots">
+              <span id = "icon-heart-5" class="iconify" data-icon="bx:heart"></span>
+              <p class = "last">3:28</p>
+              <span id = "icon-dot-5" class="iconify" data-icon="radix-icons:dots-horizontal" ></span>
+            </div>
+          </div>
+
+          <div class = "cancion-2" id="Pepas">
+            <p class = "numeración">12</p>
+            <div class = "song">
+              <img class = "img-song" src="images\Pepas.jfif" alt="pepas">
+              <p class= "name-song">Pepas<br>Farruko<br></p>
+            </div>
+            <p class = "number">2.558.072</p>
+            <p class= "album">La 167</p>
+            <div class = "heart-dots">
+              <span id = "icon-heart-5" class="iconify" data-icon="bx:heart"></span>
+              <p class = "last">4:47</p>
+              <span id = "icon-dot-5" class="iconify" data-icon="radix-icons:dots-horizontal" ></span>
+            </div>
+          </div>
+
+          <div class = "cancion-2" id="Infinity">
+            <p class = "numeración">13</p>
+            <div class = "song">
+              <img class = "img-song" src="images\Infinity.jfif" alt="infinity">
+              <p class= "name-song">Infinity<br>Jaymes Young<br></p>
+            </div>
+            <p class = "number">2.519.221</p>
+            <p class= "album">Feel Something</p>
+            <div class = "heart-dots">
+              <span id = "icon-heart-5" class="iconify" data-icon="bx:heart"></span>
+              <p class = "last">3:58</p>
+              <span id = "icon-dot-5" class="iconify" data-icon="radix-icons:dots-horizontal" ></span>
+            </div>
+          </div>
+
+          <div class = "cancion-2" id="Thatswhatiwant">
+            <p class = "numeración">14</p>
+            <div class = "song">
+              <img class = "img-song" src="images\thats-what-i-want.jpg" alt="whatiwant">
+              <p class= "name-song">THATS WHAT I WANT<br>Lil Nas X<br></p>
+            </div>
+            <p class = "number">2.519.056</p>
+            <p class= "album">MONTERO</p>
+            <div class = "heart-dots">
+              <span id = "icon-heart-5" class="iconify" data-icon="bx:heart"></span>
+              <p class = "last">2:24</p>
+              <span id = "icon-dot-5" class="iconify" data-icon="radix-icons:dots-horizontal" ></span>
+            </div>
+          </div>
+
+          <div class = "cancion-2" id="Ghost">
+            <p class = "numeración">15</p>
+            <div class = "song">
+              <img class = "img-song" src="images\Ghost.jfif" alt="ghost">
+              <p class= "name-song">Ghost<br>Justin Bieber<br></p>
+            </div>
+            <p class = "number">2.415.088</p>
+            <p class= "album">Justice</p>
+            <div class = "heart-dots">
+              <span id = "icon-heart-5" class="iconify" data-icon="bx:heart"></span>
+              <p class = "last">2:33</p>
+              <span id = "icon-dot-5" class="iconify" data-icon="radix-icons:dots-horizontal" ></span>
+            </div>
+          </div>
+
+          <div class = "cancion-2" id="Woman">
+            <p class = "numeración">16</p>
+            <div class = "song">
+              <img class = "img-song" src="images\Woman.jfif" alt="wooman">
+              <p class= "name-song">Woman<br>Doja Cat<br></p>
+            </div>
+            <p class = "number">2.313.325</p>
+            <p class= "album">Planet Her</p>
+            <div class = "heart-dots">
+              <span id = "icon-heart-5" class="iconify" data-icon="bx:heart"></span>
+              <p class = "last">2:53</p>
+              <span id = "icon-dot-5" class="iconify" data-icon="radix-icons:dots-horizontal" ></span>
+            </div>
+          </div>
+
+          <div class = "cancion-2" id="Boyfriend">
+            <p class = "numeración">17</p>
+            <div class = "song">
+              <img class = "img-song" src="images\Boyfriend.jfif" alt="boyfriend">
+              <p class= "name-song">Boyfriend<br>Dove Cameron<br></p>
+            </div>
+            <p class = "number">2.303.092</p>
+            <p class= "album">Boyfriend</p>
+            <div class = "heart-dots">
+              <span id = "icon-heart-5" class="iconify" data-icon="bx:heart"></span>
+              <p class = "last">2:33</p>
+              <span id = "icon-dot-5" class="iconify" data-icon="radix-icons:dots-horizontal" ></span>
+            </div>
+          </div>
+
+          <div class = "cancion-2" id="BadHabits">
+            <p class = "numeración">18</p>
+            <div class = "song">
+              <img class = "img-song" src="images\Bad-Habits.jpg" alt="badhabits">
+              <p class= "name-song">Bad Habits<br>Ed Sheeran<br></p>
+            </div>
+            <p class = "number">2.277.272</p>
+            <p class= "album">=</p>
+            <div class = "heart-dots">
+              <span id = "icon-heart-5" class="iconify" data-icon="bx:heart"></span>
+              <p class = "last">3:51</p>
+              <span id = "icon-dot-5" class="iconify" data-icon="radix-icons:dots-horizontal" ></span>
+            </div>
+          </div>
+
+          <div class = "cancion-2" id="DoitToit">
+            <p class = "numeración">19</p>
+            <div class = "song">
+              <img class = "img-song" src="images\Do-it-to-it.jfif" alt="doittoit">
+              <p class= "name-song">Do It To It<br>ACRAZE,Cherish<br></p>
+            </div>
+            <p class = "number">2.211.665</p>
+            <p class= "album">Do it To it</p>
+            <div class = "heart-dots">
+              <span id = "icon-heart-5" class="iconify" data-icon="bx:heart"></span>
+              <p class = "last">2:38</p>
+              <span id = "icon-dot-5" class="iconify" data-icon="radix-icons:dots-horizontal" ></span>
+            </div>
+          </div>
+
+          <div class = "cancion-2" id="Whereareyounow">
+            <p class = "numeración">20</p>
+            <div class = "song">
+              <img class = "img-song" src="images\Where-are-you-now.jfif" alt="whereareyounow">
+              <p class= "name-song">Where Are You Now<br>Lost Frequencies, Calum Scott<br></p>
+            </div>
+            <p class = "number">2.152.384</p>
+            <p class= "album">Where Are You Now</p>
+            <div class = "heart-dots">
+              <span id = "icon-heart-5" class="iconify" data-icon="bx:heart"></span>
+              <p class = "last">2:28</p>
+              <span id = "icon-dot-5" class="iconify" data-icon="radix-icons:dots-horizontal" ></span>
+            </div>
+          </div>
+
+          <div class = "cancion-2" id="Myuniverse">
+            <p class = "numeración">21</p>
+            <div class = "song">
+              <img class = "img-song" src="images\My-universe.jfif" alt="myuniverse">
+              <p class= "name-song">My Universe<br>Coldplay, BTS<br></p>
+            </div>
+            <p class = "number">2.101.171</p>
+            <p class= "album">Music Of The Spheres</p>
+            <div class = "heart-dots">
+              <span id = "icon-heart-5" class="iconify" data-icon="bx:heart"></span>
+              <p class = "last">3:46</p>
+              <span id = "icon-dot-5" class="iconify" data-icon="radix-icons:dots-horizontal" ></span>
+            </div>
+          </div>
+
+          <div class = "cancion-2" id="Losientobb">
+            <p class = "numeración">22</p>
+            <div class = "song">
+              <img class = "img-song" src="images\Lo-siento-BB.jfif" alt="losientobb">
+              <p class= "name-song">Lo Siento BB:/ (with Bad Bunny & Julieta Venegas)<br>Tainy, Bad Bunny, Julieta Venegas<br></p>
+            </div>
+            <p class = "number">2.100.768</p>
+            <p class= "album">Lo Siento BB:/ (with Bad Bunny &...</p>
+            <div class = "heart-dots">
+              <span id = "icon-heart-5" class="iconify" data-icon="bx:heart"></span>
+              <p class = "last">3:27</p>
+              <span id = "icon-dot-5" class="iconify" data-icon="radix-icons:dots-horizontal" ></span>
+            </div>
+          </div>
+
+          <div class = "cancion-2" id="Stilldre">
+            <p class = "numeración">23</p>
+            <div class = "song">
+              <img class = "img-song" src="images\Still-DRE.jfif" alt="stilldre">
+              <p class= "name-song">Still D.R.E.<br>Dr.Dre, Snoop Dogg<br></p>
+            </div>
+            <p class = "number">2.057.632</p>
+            <p class= "album">2001</p>
+            <div class = "heart-dots">
+              <span id = "icon-heart-5" class="iconify" data-icon="bx:heart"></span>
+              <p class = "last">4:31</p>
+              <span id = "icon-dot-5" class="iconify" data-icon="radix-icons:dots-horizontal" ></span>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+  </div>
+
+
+
+  <footer id = "footersong" style = "background-color: rgba(24,24,24,255);">
+
+      <div class = "player">
+        <div class = "track-art" style = "color:white"></div>
+        <div class = "track-name" style = "color:white"></div>
+        <div class = "track-artist" style = "color:rgb(92, 88, 88)"></div>
+      </div>
+      <div id ="music">
+        <div class = "random-track">
+          <span id = "random" style = "color:white" class="iconify" data-icon="ps:random"></span>
+        </div>
+        <div class = "back-track" onclick = "prevTrack()">
+          <i id = "back" style = "color:white"  class="fa-solid fa-backward-step"></i>
+        </div>
+        <div class = "playpause-track" onclick = "playpauseTrack()">
+          <i  id = "play" style = "color:white" class="fa-solid fa-circle-play"></i>
+        </div>
+        <div class = "next-track" onclick = "nextTrack()">
+          <i id = "front"  style = "color:white" class="fa-solid fa-forward-step"></i>
+        </div>
+        <div class = "repeat-track">
+          <span id = "repeat" style = "color:white" class="iconify" data-icon="bx:repeat" data-rotate="180deg"></span>
+        </div>
+      </div>
+
+      <div id = "moremusic">
+        <span id = "lista" style = "color:white" class="iconify" data-icon="bi:list"></span>
+        <span id = "computadora" style = "color:white" class="iconify" data-icon="teenyicons:computer-outline"></span>
+        <i id = "volume" style = "color:white" class="fa-solid fa-volume-high"></i>
+        <input type="range" max = "1" min = "0" step="0.1" class = "volumen">
+      </div>
+
+      
+  </footer>
+
+  <script src = "script.js"></script>
+</body>
+</html>
